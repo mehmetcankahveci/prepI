@@ -2,9 +2,22 @@
 <html>
     <head>
         <script>
-            function navigator_Go(url) {
-    window.location.assign(url); // This technique is almost exactly the same as a full <a> page refresh, but it prevents Mobile Safari from jumping out of full-screen mode
-}
+            window.onload = function () {
+    function fullscreen() {
+        var a = document.getElementsByTagName("a");
+        for (var i = 0; i < a.length;i++) {
+            if (a[i].className.match("noeffect")) {
+                // Does nothing
+            }
+            else {
+                a[i].onclick = function () {
+                    window.location = this.getAttribute("href");
+                    return false;
+                };
+            }
+        }
+    }
+};
         </script>
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -98,7 +111,7 @@
     <body>
         <h1>The Content Heaven of Prep I</h1>
         <div id="k">
-            <a href="javascript:navigator_Go('Language/index.html');"><p>Language</p></a> 
+            <a href="Language/index.html"><p>Language</p></a> 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="Literature/index.html"><p>Literature</p></a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
