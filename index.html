@@ -2,22 +2,13 @@
 <html>
     <head>
         <script>
-            window.onload = function () {
-    function fullscreen() {
-        var a = document.getElementsByTagName("a");
-        for (var i = 0; i < a.length;i++) {
-            if (a[i].className.match("noeffect")) {
-                // Does nothing
-            }
-            else {
-                a[i].onclick = function () {
-                    window.location = this.getAttribute("href");
-                    return false;
-                };
-            }
-        }
+        var eventHandler = function (event) {
+            event.preventDefault();
+        window.location = event.target.href;
     }
-};
+}
+window.addEventListener('click', eventHandler, false);
+
         </script>
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
         <meta name="apple-mobile-web-app-capable" content="yes">
