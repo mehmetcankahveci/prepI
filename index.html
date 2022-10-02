@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function navigator_Go(url) {
+    window.location.assign(url); // This technique is almost exactly the same as a full <a> page refresh, but it prevents Mobile Safari from jumping out of full-screen mode
+}
+        </script>
         <meta name="apple-mobile-web-app-status-bar-style" content="white">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="apple-touch-icon" href="kek.png">
@@ -93,7 +98,7 @@
     <body>
         <h1>The Content Heaven of Prep I</h1>
         <div id="k">
-            <a href="Language/index.html"><p>Language</p></a> 
+            <a href="javascript:navigator_Go('Language/index.html');"><p>Language</p></a> 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="Literature/index.html"><p>Literature</p></a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
