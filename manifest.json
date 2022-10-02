@@ -4,5 +4,12 @@
   "lang": "en-US",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#FFFFFF"
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "kek.png",
+      "sizes": "1080x1080",
+      "type": "image/png"
+    }
+  ]
 }
