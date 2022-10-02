@@ -1,10 +1,9 @@
 {
-  "name": "prepI",
-  "short_name": "pI",
+  "name": "Prep I Heaven",
+  "short_name": "Prep I",
   "lang": "en-US",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#FFFFFF",
   "icons": [
     {
       "src": "kek.png",
