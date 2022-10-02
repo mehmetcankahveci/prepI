@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-        var eventHandler = function (event) {
-    // Only run for iOS full screen apps
-    if (('standalone' in window.navigator) && window.navigator.standalone) {
-        // Only run if link is an anchor and points to the current page
-        if ( event.target.tagName.toLowerCase() !== 'a' || event.target.hostname !== window.location.hostname || event.target.pathname !== window.location.pathname || !/#/.test(event.target.href) ) return;
-
-        // Open link in same tab
-        event.preventDefault();
-        window.location = event.target.href;
-    }
-}
-window.addEventListener('click', eventHandler, false);
-        </script>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="manifest" href="manifest.json">
+        <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="apple-touch-icon" href="kek.png">
-        <link rel="icon" type="image/x-icon" href="kek.png">
+        <meta name="application-name" content="pI">
+        <meta name="apple-mobile-web-app-title" content="pI">
+        <meta name="theme-color" content="#FFFFFF">
+        <meta name="msapplication-navbutton-color" content="#FFFFFF">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" sizes="1080x1080" href="kek.png">
+<link rel="apple-touch-icon" type="image/png" sizes="1080x1080" href="kek.png">
         <title>Prep I Heaven</title>
         <style>
             #k {
