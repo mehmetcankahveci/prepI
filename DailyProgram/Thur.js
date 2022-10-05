@@ -2,24 +2,24 @@ var today = new Date();
 var time = today.getHours() * 100 + today.getMinutes();
 var greet;
 
-if (time > 1430) {
-  greet = 'Current Class: Period X/End of School';
-} else if (time > 1310) {
-  greet = 'Current Class: Next Lesson: BA203/Literature';
-} else if (time > 12) {
-  greet = 'Current Class: Next Lesson: BA203/Communication';
+if (time > 1415) {
+  greet = 'Next Class: Period X/End of School';
+} else if (time > 1230) {
+    greet = 'Next Class: Art';  
+} else if (time > 1150) {
+  greet = 'Next Class: BA203/Communication';
 } else if (time > 1030) {
-    greet = 'Current Class: Next Lesson: GYM/PhysEd';
+    greet = 'Next Class: MA303/Maths';
 } else if (time > 950) {
-    greet = 'Current Class: Next Lesson: BA201/Language';
+    greet = 'Next Class: BO210/Turkce';
 } else if (time > 845) {
-    greet = 'Current Class: Next Lesson: BA101/Literature';
+    greet = 'Next Class: YD/German, French, Spanish';
 } else if (time > 805) {
-    greet = 'Current Class: Next Lesson: BA303/Language';
-} else if (time > 700) {
-    greet = 'Current Class: Next Lesson: YD/German,French,Spanish';
+    greet = 'Next Class: BA201/Language';
+} else if (time > 500) {
+    greet = 'Next Class: BA101/Literature';
 } else {
-  greet = 'Something Wrong Dawg.';
+  greet = 'Daily Program will be available here soon.';
 }
 
 var show = document.getElementById('kelkelkel');
