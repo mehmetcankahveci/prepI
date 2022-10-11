@@ -26,7 +26,7 @@ else if (day == 2) {
         greet = 'Next Class: Period X/End of School';
     } else if (time > 1310) {
         greet = 'Next Class: : BO210/Turkce';
-    } else if (time > 12) {
+    } else if (time > 1200) {
         greet = 'Next Class: : BA201/Guidance';
     } else if (time > 1030) {
         greet = 'Next Class: : BA201/Language';
@@ -47,7 +47,7 @@ else if (day == 3) {
         greet = 'Next Class: Period X/End of School';
     } else if (time > 1310) {
         greet = 'Next Class: BA203/Literature';
-    } else if (time > 12) {
+    } else if (time > 1200) {
         greet = 'Next Class: BA203/Communication';
     } else if (time > 1030) {
         greet = 'Next Class: GYM/PhysEd';
