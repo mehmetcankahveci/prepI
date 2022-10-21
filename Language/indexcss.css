@@ -118,6 +118,7 @@ div.gallery {
   .mmm {
     margin-bottom: 0vw;
     border-radius: 15px;
+    border: 2px solid white;
     padding: 10px;
     width: 60%;
     height: auto;
