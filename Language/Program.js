@@ -6,7 +6,7 @@ if (day == 1) {
     if (time > 1439) {
     greet = 'Next Class: Period X/End of School';
     } else if (time > 1240) {
-        greet = 'YD/German, French, Spanish';  
+        greet = 'Next Class: YD/German, French, Spanish';  
     } else if (time > 1155) {
     greet = 'Next Class: BA104/Literature';
     } else if (time > 945) {
@@ -25,19 +25,19 @@ else if (day == 2) {
     if (time > 1439) {
         greet = 'Next Class: Period X/End of School';
     } else if (time > 1325) {
-        greet = 'Next Class: : BO210/Turkce';
+        greet = 'Next Class: BO210/Turkce';
     } else if (time > 1155) {
-        greet = 'Next Class: : BA201/Guidance';
+        greet = 'Next Class: BA201/Guidance';
     } else if (time > 1030) {
-        greet = 'Next Class: : BA201/Language';
+        greet = 'Next Class: BA201/Language';
     } else if (time > 945) {
-        greet = 'Next Class: : BA202/Communication';
+        greet = 'Next Class: BA202/Communication';
     } else if (time > 845) {
         greet = 'Next Class: EK29/CS';
     } else if (time > 805) {
-        greet = 'Next Class: : BA101/Literature';
+        greet = 'Next Class: BA101/Literature';
     } else if (time > 500) {
-        greet = 'Next Class: : YD/German,French,Spanish';
+        greet = 'Next Class: YD/German,French,Spanish';
     } else {
   greet = 'Daily Program will be available here soon.';
 } 
@@ -54,11 +54,11 @@ else if (day == 3) {
     } else if (time > 945) {
         greet = 'Next Class: BA201/Language';
     } else if (time > 845) {
-        greet = 'Next Class: : BA101/Literature';
+        greet = 'Next Class: BA101/Literature';
     } else if (time > 805) {
-        greet = 'Next Class: : BA303/Language';
+        greet = 'Next Class: BA303/Language';
     } else if (time > 500) {
-        greet = 'Next Class: : YD/German,French,Spanish';
+        greet = 'Next Class: YD/German,French,Spanish';
     } else {
         greet = 'Daily Program will be available here soon.';
     }
@@ -88,7 +88,7 @@ else if (day == 5) {
     if (time > 1439) {
         greet = 'Next Class: Period X/End of School';
       } else if (time > 1240) {
-          greet = 'BO210/Turkce';  
+          greet = 'Next Class: BO210/Turkce';  
       } else if (time > 1155) {
         greet = 'Next Class: BA202/Language';
       } else if (time > 945) {
