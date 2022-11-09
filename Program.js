@@ -58,7 +58,7 @@ else if (day == 3) {
     } else if (time > 805) {
         greet = 'Next Class: BA303/Language';
     } else if (time > 500) {
-        greet = 'Next Class: YD/German,French,Spanish';
+        greet = 'Next Class: YD/German, French, Spanish';
     } else {
         greet = 'Daily Program will be available here soon.';
     }
