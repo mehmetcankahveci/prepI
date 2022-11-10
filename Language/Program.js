@@ -4,7 +4,7 @@ var time = today.getHours() * 100 + today.getMinutes();
 var greet = 'Daily Program will be available here soon.';
 import lessons from './lessons.json' assert {type: 'json'}
 
-console.log(time)
+
 if (day <= 5 && time <= 1439) {
     lessons[day - 1].some(lesson => {
         if (time > lesson['time']) {
