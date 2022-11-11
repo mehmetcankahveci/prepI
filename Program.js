@@ -6,7 +6,6 @@ import lessons from './lessons.json' assert {type: 'json'}
 
 
 function getClass() {
-    console.log("refrewswa")
     if (day <= 5 && time <= 1439) {
         lessons[day - 1].some(lesson => {
             if (time > lesson['time']) {
