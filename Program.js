@@ -6,6 +6,7 @@ import lessons from './lessons.json' assert {type: 'json'}
 
 
 function getClass() {
+    console.log("refrewswa")
     if (day <= 5 && time <= 1439) {
         lessons[day - 1].some(lesson => {
             if (time > lesson['time']) {
@@ -23,8 +24,12 @@ function getClass() {
 
     var show = document.getElementById('kelkelkel');
     show.textContent = greet;
+    var count = 60
+    setInterval(function () {
+        count--;
+        document.getElementById('counter').textContent = 'Next refresh in: ' + count + ' seconds';
+    }, 1000);
 }
 
 getClass();
 setInterval(function () {getClass();}, 60 * 1000);
-
