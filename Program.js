@@ -14,12 +14,13 @@ function getClass() {
             }
         });
     }
+    else if (day > 5) {
+        greet = 'Have a Nice Weekend!'
+    }
     else if (time > 1439) {
         greet = 'Next Class: Period X/End of School'
     }
-    else {
-        greet = 'Have a Nice Weekend!'
-    }
+
 
     var show = document.getElementById('kelkelkel');
     show.textContent = greet;
