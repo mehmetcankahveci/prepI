@@ -6,7 +6,7 @@ import lessons from './lessons.json' assert {type: 'json'}
 function getClass() {
     let greet = 'Daily Program will be available here soon.';
 
-    if (day <= 5 && time <= 1439) {
+    if (1 <= day && day <= 5 && time <= 1439) {
         lessons[day - 1].some(lesson => {
             if (time > lesson['time']) {
                 greet = 'Next Class: ' + lesson['name']
@@ -14,7 +14,7 @@ function getClass() {
             }
         });
     }
-    else if (day > 5) {
+    else if (day > 5 || day == 0) {
         greet = 'Have a Nice Weekend!'
     }
     else if (time > 1439) {
