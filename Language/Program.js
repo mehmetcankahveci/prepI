@@ -2,9 +2,12 @@ var today = new Date();
 var day = today.getDay()
 var time = today.getHours() * 100 + today.getMinutes();
 import lessons from './lessons.json' assert {type: 'json'}
+let timerSeconds = 1;
+let timerDisplay = document.getElementById('timer')
+let show = document.getElementById('kelkelkel');
 
 function getClass() {
-    let greet = 'Daily Program will be available here soon.';
+    var greet = 'Daily Program will be available here soon.';
 
     if (1 <= day && day <= 5 && time <= 1439) {
         lessons[day - 1].some(lesson => {
@@ -22,11 +25,21 @@ function getClass() {
     }
 
 
-    var show = document.getElementById('kelkelkel');
+    
     show.textContent = greet;
 }
 
-getClass();
+function timer() {
+    timerSeconds--;
+    timerDisplay.textContent = 'Next refresh in: ' + timerSeconds + ' seconds'
+    if (timerSeconds <= 0) {
+        timerDisplay.textContent = 'Refreshing...'
+        getClass();
+        timerSeconds = 60
+    }
+}
+
+setInterval(function() {timer();}, 1000)
 
 document.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState == "visible") {
