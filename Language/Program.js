@@ -1,10 +1,12 @@
 import lessons from './lessons.json' assert {type: 'json'}
 
 let timerSeconds = 1;
-let timerDisplay = document.getElementById('timer')
+let timerDisplay = document.getElementById('timer');
 let show = document.getElementById('kelkelkel');
 
 function getClass() {
+    clearInterval(timerInterval)
+    timerDisplay.textContent = 'Refreshing...'
     let today = new Date();
     let day = today.getDay()
     let time = today.getHours() * 100 + today.getMinutes();
@@ -25,24 +27,32 @@ function getClass() {
 
 
     show.textContent = greet;
+    timerSeconds = 60
+    timerDisplay.textContent = 'Next refresh in 60 seconds'
+    timerInterval = setInterval(function () {
+        timer();
+    }, 1000)
 }
 
 function timer() {
     timerSeconds--;
     timerDisplay.textContent = 'Next refresh in ' + timerSeconds + ' seconds'
     if (timerSeconds <= 0) {
-        timerDisplay.textContent = 'Refreshing...'
         getClass();
-        timerSeconds = 60
     }
 }
 
-setInterval(function () {
+let timerInterval = setInterval(function () {
     timer();
 }, 1000)
 
-document.addEventListener("visibilitychange", (event) => {
-    if (document.visibilityState == "visible") {
+document.addEventListener('visibilitychange', (event) => {
+    if (document.visibilityState == 'visible') {
         getClass();
     }
 });
+
+document.getElementById("nextClassDisplay").addEventListener("click", getClass)
+document.getElementById("mmwDisplay").addEventListener("click", getClass)
+
+getClass()
