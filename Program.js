@@ -1,7 +1,7 @@
 import lessons from './lessons.json' assert {type: 'json'}
 
 let timerSeconds = 1;
-let timerDisplay = document.getElementById('timer')
+let timerDisplay = document.getElementById('timer');
 let show = document.getElementById('kelkelkel');
 
 function getClass() {
@@ -54,3 +54,5 @@ document.addEventListener('visibilitychange', (event) => {
 
 document.getElementById("nextClassDisplay").addEventListener("click", getClass)
 document.getElementById("mmwDisplay").addEventListener("click", getClass)
+
+getClass()
