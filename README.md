@@ -1,6 +1,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/memocankahveci/prepi/badge/main)](https://www.codefactor.io/repository/github/memocankahveci/prepi/overview/main)
 
-#**Please Donate I'm broke.**
+# **Please Donate I'm broke.**
 
 ⚠️⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️⚠️
   
