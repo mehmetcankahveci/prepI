@@ -1,9 +1,15 @@
-var today = new Date();
-var day = today.getDay()
-var time = today.getHours() * 100 + today.getMinutes();
 import lessons from './lessons.json' assert {type: 'json'}
 
+let timerSeconds = 1;
+let timerDisplay = document.getElementById('timer');
+let show = document.getElementById('kelkelkel');
+
 function getClass() {
+    clearInterval(timerInterval)
+    timerDisplay.textContent = 'Refreshing...'
+    let today = new Date();
+    let day = today.getDay()
+    let time = today.getHours() * 100 + today.getMinutes();
     let greet = 'Daily Program will be available here soon.';
 
     if (1 <= day && day <= 5 && time <= 1439) {
@@ -13,23 +19,40 @@ function getClass() {
                 return true;
             }
         });
-    }
-    else if (day > 5 || day == 0) {
+    } else if (day > 5 || day == 0) {
         greet = 'Have a Nice Weekend!'
-    }
-    else if (time > 1439) {
+    } else if (time > 1439) {
         greet = 'Next Class: Period X/End of School'
     }
 
 
-    var show = document.getElementById('kelkelkel');
     show.textContent = greet;
+    timerSeconds = 60
+    timerDisplay.textContent = 'Next refresh in 60 seconds'
+    timerInterval = setInterval(function () {
+        timer();
+    }, 1000)
 }
 
-getClass();
+function timer() {
+    timerSeconds--;
+    timerDisplay.textContent = 'Next refresh in ' + timerSeconds + ' seconds'
+    if (timerSeconds <= 0) {
+        getClass();
+    }
+}
 
-document.addEventListener("visibilitychange", (event) => {
-    if (document.visibilityState == "visible") {
+let timerInterval = setInterval(function () {
+    timer();
+}, 1000)
+
+document.addEventListener('visibilitychange', (event) => {
+    if (document.visibilityState == 'visible') {
         getClass();
     }
 });
+
+document.getElementById("nextClassDisplay").addEventListener("click", getClass)
+document.getElementById("mmwDisplay").addEventListener("click", getClass)
+
+getClass()
