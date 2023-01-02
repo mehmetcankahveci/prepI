@@ -1,7 +1,7 @@
 let timerSeconds = 1;
 let timerDisplay = document.getElementById('timer');
 let show = document.getElementById('kelkelkel');
-let lessons
+let lessons;
 
 function getLessons() {
     let xmlHttp = new XMLHttpRequest();
@@ -13,7 +13,7 @@ function getLessons() {
 
 function getClass() {
     clearInterval(timerInterval);
-    timerDisplay.textContent = 'Refreshing...'
+    timerDisplay.textContent = 'Refreshing...';
     let today = new Date();
     let day = today.getDay();
     let time = today.getHours() * 100 + today.getMinutes();
@@ -59,7 +59,7 @@ document.addEventListener('visibilitychange', (event) => {
     }
 });
 
-lessons = getLessons()
+lessons = getLessons();
 
 document.getElementById("nextClassDisplay").addEventListener("click", getClass);
 document.getElementById("mmwDisplay").addEventListener("click", getClass);
