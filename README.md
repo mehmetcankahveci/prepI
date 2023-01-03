@@ -1,6 +1,5 @@
-# [![CodeFactor](https://www.codefactor.io/repository/github/memocankahveci/prepi/badge/main)](https://www.codefactor.io/repository/github/memocankahveci/prepi/overview/main)
+# [![CodeFactor](https://www.codefactor.io/repository/github/mehmetcankahveci/prepi/badge)](https://www.codefactor.io/repository/github/mehmetcankahveci/prepi)
 
-# **Please Donate I'm broke.**
 
 ### ⚠️⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️⚠️
   
@@ -13,5 +12,4 @@
 
 
 ![Image](https://www.uaa.k12.tr/assets/images/logo.png)
-![Image](https://www.uaa.k12.tr/assets/images/logo-1.png)
 
