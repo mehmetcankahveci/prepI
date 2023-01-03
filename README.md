@@ -1,4 +1,4 @@
-# [![CodeFactor](https://www.codefactor.io/repository/github/memocankahveci/prepi/badge/main)](https://www.codefactor.io/repository/github/memocankahveci/prepi/overview/main)
+# [![CodeFactor](https://www.codefactor.io/repository/github/mehmetcankahveci/prepi/badge)](https://www.codefactor.io/repository/github/mehmetcankahveci/prepi)
 
 
 ### ⚠️⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️⚠️
