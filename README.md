@@ -12,5 +12,4 @@
 
 
 ![Image](https://www.uaa.k12.tr/assets/images/logo.png)
-![Image](https://www.uaa.k12.tr/assets/images/logo-1.png)
 
