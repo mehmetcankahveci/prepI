@@ -3,7 +3,7 @@
 
 ### ⚠️⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️⚠️
   
-  #### Hehe git gut.
+  #### Hehe git gud.
 
 
 # Hello!
