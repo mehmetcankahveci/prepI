@@ -107,7 +107,7 @@ img {
 #footer {
     display: flex; 
     justify-content: space-between; 
-    position: absolute; 
+    position: fixed; 
     bottom: 0; 
     width: 100%;
     align-items: center;
@@ -128,6 +128,7 @@ img {
 }
 #morg {
     color: white;
+    text-decoration: none;
 }
 h1:hover {
     color: #64ffda;
@@ -135,7 +136,6 @@ h1:hover {
 body {
     background-color: #0a192f;
     height: 100%;
-    overflow-y: hidden;
   }
 .topg {
     display: flex;
