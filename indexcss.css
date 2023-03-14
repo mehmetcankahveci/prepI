@@ -118,7 +118,6 @@ img {
 }
 .footerbuttons {
     display: flex;
-    padding: 15px;
     -drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -139,4 +138,12 @@ body {
   }
 .topg {
     display: flex;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: white;
 }

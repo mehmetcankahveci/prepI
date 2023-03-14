@@ -1,6 +1,7 @@
 let timerSeconds = 1;
 let timerDisplay = document.getElementById('timer');
 let show = document.getElementById('kelkelkel');
+let show2 = document.getElementById('kelkelkek');
 let lessons;
 
 function getLessons() {
@@ -18,6 +19,7 @@ function getClass() {
     let day = today.getDay();
     let time = today.getHours() * 100 + today.getMinutes();
     let greet = 'Daily Program will be available here soon.';
+    let greet2 = 'Daily Program will be available here soon.';
 
     if (1 <= day && day <= 5 && time <= 1439) {
         lessons[day - 1].some(lesson => {
@@ -31,7 +33,6 @@ function getClass() {
     } else if (time > 1439) {
         greet = 'Next Class: Period X/End of School';
     }
-
 
     show.textContent = greet;
     timerSeconds = 60;

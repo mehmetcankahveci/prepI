@@ -17,6 +17,20 @@
         <link rel="stylesheet" href="indexcss.css">   
     </head>
     <body>
+        <ul class="nav nav-tabs" style="background-color: black;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href=".">Prep I</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://micromoon.org">Memes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://search.micromoon.co">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Micromoon Account (Coming Soon)</a>
+            </li>
+          </ul>
     <div id="topmenu">
         <div class="topg">
         <div style="width:1vw; clear:both;"></div>   
@@ -25,14 +39,15 @@
     <div class="topg" style="align-items: center;">
         <p id="displayDateTime"></p>
         <div style="width:0.5vw; clear:both;"></div> 
-        <div><img id="logo" src="Pic/ribbon.png" alt="Donate to Ahbap" onclick="poo()"></div>
         <script type="text/javascript" src="JS/Date.js"></script>
     </div> 
     </div>
     <div style="height:3vh; width:100%; clear:both;"></div>
         <div id="nextClassDisplay">
             <div id="nc">
-            <h2 id="kelkelkel"></h2>
+            <h2 id="kelkelkel" class="placeholder-glow">
+                <span class="placeholder col-6 placeholder-lg bg-info" style="width: 75vw;"></span>
+            </h2>
             <script type="module" src="JS/Program.js"></script>
             <h4 id="timer"></h4>
             </div></div>
@@ -82,19 +97,13 @@
         </div>
         <div id="footer">
         <div class="footerbuttons">
-            <div><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0; width: auto; height: auto;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></div>
             <div><a href="/istiklal/"><img src="Pic/flag.png" alt="Flag" style="width: 50px; height:31px;"></a></div>
-            <div><a href="/ak/"><img src="Pic/bulb.gif" alt="Baskanim" style="border-width:0; width: 50px; height: 31px;"></a></div>
             <div><a href="/rickroll/"><img src="Pic/linus.png" alt="rick" style="border-width:0; height: 31px;"></a></div>
         </div>
         <div class="footerbuttons">    
-            <a class="morg" href="https://micromoon.org" target="_blank"><h1 style="font-size: large;" class="morg">micromoon.org</h1></a>
+            <a class="morg" href="https://micromoon.org" target="_blank"><h1 style="font-size: large;" class="morg">Looking for Memes?&nbsp;|&nbsp;</h1></a>
+            <div><h1 style="font-size: large; color: white;" >© 2023, Micromoon, Ltd. All Rights Reserved.</h1></div>
         </div>
         </div>
-        <script>
-            function poo() {
-                alert("Başımız Sağolsun! Destek İçin ahbap.org'dan Bağışta Bulunabilirsiniz.")
-            }
-        </script>
     </body>
 </html>
