@@ -6,11 +6,5 @@
   
   #### Hehe git gud.
 
-
-# Hello!
-
-### Welcome to the Source Code for the website Prep I deserves. 
-
-
-![Image](https://www.uaa.k12.tr/assets/images/logo.png)
+# This website isn't related to/owned by UAA. Credit goes to the school for all of the Daily Programs.
 
