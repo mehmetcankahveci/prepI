@@ -6,5 +6,5 @@
   
   #### Hehe git gud.
 
-# This website isn't related to/owned by UAA. Credit goes to the school for all of the Daily Programs.
+### This website isn't related to/owned by UAA. Credit goes to the school for all of the Daily Programs.
 
