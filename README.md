@@ -2,7 +2,7 @@
 
 
 ### ⚠️⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️⚠️
-#Kaya pls stop sending pull requests
+# Kaya please stop sending pull requests
   
   #### Hehe git gud.
 
