@@ -105,9 +105,9 @@ img {
     justify-content: center;
 }
 #footer {
-    display: flex; 
+    display: flex;
     justify-content: space-between; 
-    position: fixed; 
+    position: fixed;
     bottom: 0; 
     width: 100%;
     align-items: center;
@@ -115,6 +115,10 @@ img {
     min-height: 40px;
     background-color: #050c18;
     left: 0;
+}
+#footer-spacer {
+    margin-bottom: 3vh;
+    min-height: 40px;
 }
 .footerbuttons {
     display: flex;
